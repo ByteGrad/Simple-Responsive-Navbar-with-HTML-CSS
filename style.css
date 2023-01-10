@@ -70,31 +70,11 @@ body {
 .nav__link {
   color: rgba(255, 255, 255, 0.75);
   font-size: 15px;
-  transition: all 0.4s;
-  position: relative;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: rgba(255, 255, 255, 1);
-}
-
-.nav__link::after {
-  content: '';
-  opacity: 0;
   transition: all 0.2s;
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: rgb(0, 183, 255);
-  pointer-events: none;
 }
 
-.nav__link:hover::after,
-.nav__link:focus::after {
-  opacity: 1;
+.nav__link:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 .btn {
